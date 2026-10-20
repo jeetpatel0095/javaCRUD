@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ page import ="aryan.emp_detail" %>
+<%@ page import ="jeet.emp_detail" %>
 <!DOCTYPE html>
 <html>
 <head>
