@@ -25,10 +25,10 @@ public int delete(int id){
     String sql="delete from emp99 where id="+id+"";  
     return template.update(sql);  
 }  
-/*public Emp getEmpById(int id){  
-    String sql="select * from emp99 where id=?";  
-    return template.queryForObject(sql, new Object[]{id},new BeanPropertyRowMapper<Emp>(Emp.class));  
-} */ 
+public Emp getEmpById(int id){
+    String sql="select * from emp99 where id=?";
+    return template.queryForObject(sql, new Object[]{id},new BeanPropertyRowMapper<Emp>(Emp.class));
+}
 public List<Emp> getEmployees(){  
     return template.query("select * from emp99", new RowMapper<Emp>()
     {  
